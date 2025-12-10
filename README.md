@@ -25,6 +25,7 @@
 ## Architecture Diagram (Mermaid)
 
 Project Structure
+
 weather-project/
 ├── src/
 │   ├── main.py
@@ -35,6 +36,7 @@ weather-project/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
 ⚙️ Prerequisites
 
 Make sure you have:
