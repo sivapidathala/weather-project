@@ -24,13 +24,6 @@
 
 ## Architecture Diagram (Mermaid)
 
-```mermaid
-flowchart TD
-  A[User / Scheduler] --> B[Python Script]
-  B --> C[OpenWeather API]
-  B --> D[AWS S3 Upload]
-  C --> B
-  D --> S3Bucket[(S3 Weather Bucket)]
 Project Structure
 weather-project/
 ├── src/
