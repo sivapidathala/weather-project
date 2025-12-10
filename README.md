@@ -1,9 +1,5 @@
 # Weather Data Collection System
 
-A DevOps-focused Python project that collects real-time weather data from the OpenWeather API and stores it in AWS S3 for historical tracking.  
-This project demonstrates API integration, cloud storage, error handling, environment management, and version control best practices.
-
----
 
 ##  Features
 
