@@ -1,7 +1,11 @@
 # Weather Data Collection System
 
+A DevOps-focused Python project that collects real-time weather data from the OpenWeather API and stores it in AWS S3 for historical tracking.  
+This project demonstrates API integration, cloud storage, error handling, environment management, and version control best practices.
 
-##  Features
+---
+
+## 🚀 Features
 
 - Fetches real-time weather for **multiple cities**
 - Shows **temperature, humidity, weather conditions**
@@ -12,20 +16,14 @@
 
 ---
 
-## Technical Stack
+## 🏗️ Technical Stack
 
 - **Python 3.x**
 - **OpenWeather API**
 - **AWS S3** (via boto3 SDK)
 - **requests**, **python-dotenv**
 - Optional: Terraform (Infrastructure as Code)
-
----
-
-## Architecture Diagram (Mermaid)
-
 Project Structure
-
 weather-project/
 ├── src/
 │   ├── main.py
@@ -40,30 +38,41 @@ weather-project/
 ⚙️ Prerequisites
 
 Make sure you have:
+
 Python 3.8+
+
 pip installed
+
 AWS credentials (Access key + Secret key)
+
 OpenWeather API key
-Setup Instructions (Step by Step)
+
+🔧 Setup Instructions (Step by Step)
 1️⃣ Clone Repository
 git clone https://github.com/<your-username>/weather-data-project.git
 cd weather-data-project
+
 2️⃣ Create & Activate Virtual Environment
 python3 -m venv venv
 source venv/bin/activate   # Linux/Mac
 # OR
 venv\Scripts\activate      # Windows
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 4️⃣ Configure Environment Variables
+
+Create a .env file:
+
 OPENWEATHER_API_KEY=your_api_key
 
 AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret
 AWS_REGION=us-east-1
 S3_BUCKET_NAME=your-bucket-name
-
 CITIES=Hyderabad,Chennai,Mumbai,Bangalore
+
 AWS S3 Setup
 Log in to AWS console
 Create an S3 bucket
@@ -79,7 +88,7 @@ Pushing to GitHub
 git add .
 git commit -m "Initial commit"
 git push -u origin main
-👤 Author
+Author
 
-Your Name : PIDATHALA SIVA
-GitHub: https://github.com/sivapidathala/weather-project.git
+Your Name
+https://github.com/sivapidathala/weather-project.git
