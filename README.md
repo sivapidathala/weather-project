@@ -1,7 +1,8 @@
 # weather-data-collection   Authour:Pidathala Siva
+ 
 # Project Overview:-
                  This project collects real-time weather data for multiple cities using the OpenWeather API, processes it using Python, and automatically uploads the data files to AWS S3.
-
+ 
 # DevOps workflow:-
 # 1.API Integration: -API Integration means connecting one software application with another using an API.
 # 2.Cloud Automation:-Automatically managing cloud services like EC2, S3, VPC, IAM, Lambda using scripts or tools (Terraform, Ansible, CloudFormation, etc.)
@@ -13,17 +14,17 @@
 # 6.Error Handling (Managing Failures):-catching and managing errors so your program does not crash.
                ---->Instead of stopping, your code handles the error safely.
 # 7.Modular Code (Code in Small Parts):-writing your program in small, separate files or functions instead of one big file.
-
+ 
 # main Feature of this project:-
        The main feature of this project is fetching real-time weather data for multiple cities and automatically storing it in AWS S3 with timestamps for historical tracking.”
- # in my Project:
- -->Connects to OpenWeather API
- -->Fetches live weather data (temperature, humidity, conditions)
- -->Supports multiple cities
- -->Adds timestamps to each data record
- -->Saves the data as JSON/CSV files
- -->Uploads the files automatically to AWS S3
- -->Maintains history for each city.
+# in my Project:
+-->Connects to OpenWeather API
+-->Fetches live weather data (temperature, humidity, conditions)
+-->Supports multiple cities
+-->Adds timestamps to each data record
+-->Saves the data as JSON/CSV files
+-->Uploads the files automatically to AWS S3
+-->Maintains history for each city.
 # Technical Architecture:
 Languages / Tools:
 # 1.Python 3.x:This is the programming language used to build your project.
@@ -35,7 +36,7 @@ Languages / Tools:
      -->It allows Python code to talk to AWS.
 # 6.python-dotenv:This library is used to load environment variables from a .env file.
 # 7.requests:A Python library used to call APIs.
-
+ 
 # project structure:
 weather-data-collection-system/
 │── src/
@@ -63,7 +64,7 @@ weather-data-collection-system/
       Terraform plan
 --> apply to terraform
   terraform apply -auto-approve
-
+ 
 # High-Level Architecture Diagram
 ┌───────────────────────┐       ┌────────────────────┐
 │   Python Application   │──────▶│  OpenWeather API    │
@@ -81,7 +82,7 @@ weather-data-collection-system/
 └─────────────────────────┘
 # after i am doing aws configure
 how to create access key id and access key:-
-
+ 
 -->First i login to AWS console next go to IAM and click to users 
 -->select my users i mean kesava 
 --> go  to "security credentials" tab next scroll down to access keys after to create access key
@@ -94,15 +95,15 @@ how to create access key id and access key:-
 -->after i check the s3 bucket in aws account with data add or not.
 -->Next i make change directory.
 -->after i install  boto3.
- From boto3
+From boto3
 --Upload files to S3
 --Manage AWS resources programmatically
 --> next uploaded weather.json files in my s3 bucket successfully.
 -->after deactivate to venv(Virtual environment)
 -->next i add 2 cities temparature and humidity
-->after i am activate venv 
+-->after i am activate venv 
 -->and i am dpoing all citys uploaded in my s3 bucket.
-
+ 
 # Error Handling:-The system logs errors safely without interrupting execution.
 1. Invalid API key:-the API key you are using is wrong, expired, missing, or not recognized by the server.
                     ---->This error comes from the OpenWeather API when it cannot verify your key.
@@ -110,7 +111,7 @@ how to create access key id and access key:-
 3. AWS upload exceptions:-occur when your Python program tries to upload a file to AWS S3, but something goes wrong.
 4. Network/API timeout:-A network/API timeout occurs when your Python program requests data from the OpenWeather API.
                              ------>but the API does not respond within a certain time limit.
-
+ 
 # Now i am using git commands and i push my data in github repository/
 git commands:1.Initialize Git(git init)
              2.check git status(git status)
@@ -118,6 +119,6 @@ git commands:1.Initialize Git(git init)
              4.Commit changes(git commit -m "my message")
              5.Add remote(git remote add origin my repositort http url)
              6.Push code first time(git push -u origin main)
-
+ 
 # summery:
           The Weather Data Collection System is a DevOps-focused project that integrates real-time weather data retrieval with cloud automation and infrastructure management. It demonstrates essential skills in API integration, cloud storage, automation, and code organization.
